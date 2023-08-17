@@ -58,6 +58,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="./images/parallelogram.png" alt="parallelogram" /></figure>
                     <div class="card-body">
@@ -65,8 +66,8 @@
                         <p class="text-2xl">Area (A) = b x h</p>
                         <p>
                             <!-- parallelogram width -->
-                            <input id="parallelogram-height" placeholder="base" class="bg-gray-200 border w-24 px-2 text-xl"
-                                type="text">
+                            <input id="parallelogram-height" placeholder="base"
+                                class="bg-gray-200 border w-24 px-2 text-xl" type="text">
                             <span class="ml-2">cm</span>
                             <!-- parallelogram height -->
                             <input id="parallelogram-width" placeholder="base"
@@ -75,7 +76,31 @@
                         </p>
                         <p>Area: <span id="show-parallelogram-area">0</span>cm<sup>2</sup></p>
                         <div class="card-actions">
-                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ellipse -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="ellipse" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Area of ellipse</h2>
+                        <p class="text-2xl">Area (A) = π x a x b</p>
+                        <p>
+                            <!-- ellipse length -->
+                            <input id="ellipse-major-radius" placeholder="large"
+                                class="bg-gray-200 border w-24 px-2 text-xl" type="text">
+                            <span class="ml-2">cm</span>
+                            <!-- ellipse width -->
+                            <input id="ellipse-minor-radius" placeholder="short"
+                                class="bg-gray-200 ml-2 border w-24 px-2 text-xl" type="text">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>Area: <span id="show-ellipse-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
