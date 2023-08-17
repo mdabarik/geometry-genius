@@ -10,14 +10,14 @@ function calculateRectangleArea() {
     const width = getInputValue('rectangle-width');
     const height = getInputValue('rectangle-height')
     const area = width * height;
-    document.getElementById('show-rectangle-area').innerText = area;
+    setTextFieldText('show-rectangle-area', area);
 }
 
 function calculateParallelogramArea() {
     const height = getInputValue('parallelogram-height');
     const width = getInputValue('parallelogram-width');
     const area = height * width;
-    document.getElementById('show-parallelogram-area').innerText = area;
+    setTextFieldText('show-parallelogram-area', area);
 
 }
 
