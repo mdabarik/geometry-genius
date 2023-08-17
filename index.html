@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- container -->
+        <div class="flex flex-col md:flex-row">
+            <!-- shape container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- first card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Area of Rectangle</h2>
+                        <p class="text-2xl">Area (A) = 0.5 x b x h</p>
+                        <p>
+                            <input id="triangle-base" placeholder="base" class="bg-gray-200 border w-24 px-2 text-xl"
+                                type="text">
+                            <span class="ml-2">cm</span>
+                            <input id="triangle-height" placeholder="base"
+                                class="bg-gray-200 ml-2 border w-24 px-2 text-xl" type="text">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>Area: <span id="show-rect-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rectangle card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rectangle.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Area of Rectangle</h2>
+                        <p class="text-2xl">Area (A) = w x l</p>
+                        <p>
+                            <!-- rectangle length -->
+                            <input id="rectangle-height" placeholder="base" class="bg-gray-200 border w-24 px-2 text-xl"
+                                type="text">
+                            <span class="ml-2">cm</span>
+                            <!-- rectangle width -->
+                            <input id="rectangle-width" placeholder="base"
+                                class="bg-gray-200 ml-2 border w-24 px-2 text-xl" type="text">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>Area: <span id="show-rectangle-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- area calculator -->
+            <div class="">
+                <div class="text-3xl">Area Calculator</div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./scripts/area-calculator.js"></script>
+</body>
+
+</html>
